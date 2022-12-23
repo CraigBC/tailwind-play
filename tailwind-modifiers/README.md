@@ -1,27 +1,76 @@
-# Next.js + Tailwind CSS Example
+# Tailwind Modifiers
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+| Modifier          | CSS                                            |
+|-------------------|------------------------------------------------|
+| hover             | &amp;:hover                                    |
+| focus             | &amp;:focus                                    |
+| focus-within      | &amp;:focus-within                             |
+| focus-visible     | &amp;:focus-visible                            |
+| active            | &amp;:active                                   |
+| visited           | &amp;:visited                                  |
+| target            | &amp;:target                                   |
+| first             | &amp;:first-child                              |
+| last              | &amp;:last-child                               |
+| only              | &amp;:only-child                               |
+| odd               | &amp;:nth-child(odd)                           |
+| even              | &amp;:nth-child(even)                          |
+| first-of-type     | &amp;:first-of-type                            |
+| last-of-type      | &amp;:last-of-type                             |
+| only-of-type      | &amp;:only-of-type                             |
+| empty             | &amp;:empty                                    |
+| disabled          | &amp;:disabled                                 |
+| enabled           | &amp;:enabled                                  |
+| checked           | &amp;:checked                                  |
+| indeterminate     | &amp;:indeterminate                            |
+| default           | &amp;:default                                  |
+| required          | &amp;:required                                 |
+| valid             | &amp;:valid                                    |
+| invalid           | &amp;:invalid                                  |
+| in-range          | &amp;:in-range                                 |
+| out-of-range      | &amp;:out-of-range                             |
+| placeholder-shown | &amp;:placeholder-shown                        |
+| autofill          | &amp;:autofill                                 |
+| read-only         | &amp;:read-only                                |
+| before            | &amp;::before                                  |
+| after             | &amp;::after                                   |
+| first-letter      | &amp;::first-letter                            |
+| first-line        | &amp;::first-line                              |
+| marker            | &amp;::marker                                  |
+| selection         | &amp;::selection                               |
+| file              | &amp;::file-selector-button                    |
+| backdrop          | &amp;::backdrop                                |
+| placeholder       | &amp;::placeholder                             |
+| sm                | @media (min-width: 640px)                      |
+| md                | @media (min-width: 768px)                      |
+| lg                | @media (min-width: 1024px)                     |
+| xl                | @media (min-width: 1280px)                     |
+| 2xl               | @media (min-width: 1536px)                     |
+| min-[…]           | @media (min-width: …)                          |
+| max-sm            | @media not all and (min-width: 640px)          |
+| max-md            | @media not all and (min-width: 768px)          |
+| max-lg            | @media not all and (min-width: 1024px)         |
+| max-xl            | @media not all and (min-width: 1280px)         |
+| max-2xl           | @media not all and (min-width: 1536px)         |
+| max-[…]           | @media (max-width: …)                          |
+| dark              | @media (prefers-color-scheme: dark)            |
+| portrait          | @media (orientation: portrait)                 |
+| landscape         | @media (orientation: landscape)                |
+| motion-safe       | @media (prefers-reduced-motion: no-preference) |
+| motion-reduce     | @media (prefers-reduced-motion: reduce)        |
+| contrast-more     | @media (prefers-contrast: more)                |
+| contrast-less     | @media (prefers-contrast: less)                |
+| print             | @media print                                   |
+| supports-[…]      | @supports (…)                                  |
+| aria-checked      | &amp;[aria-checked=“true”]                     |
+| aria-disabled     | &amp;[aria-disabled=“true”]                    |
+| aria-expanded     | &amp;[aria-expanded=“true”]                    |
+| aria-hidden       | &amp;[aria-hidden=“true”]                      |
+| aria-pressed      | &amp;[aria-pressed=“true”]                     |
+| aria-readonly     | &amp;[aria-readonly=“true”]                    |
+| aria-required     | &amp;[aria-required=“true”]                    |
+| aria-selected     | &amp;[aria-selected=“true”]                    |
+| aria-[…]          | &amp;[aria-…]                                  |
+| data-[…]          | &amp;[data-…]                                  |
+| rtl               | [dir=“rtl”] &amp;                              |
+| ltr               | [dir=“ltr”] &amp;                              |
+| open              | &amp;[open]                                    |
